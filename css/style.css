@@ -587,7 +587,7 @@
   gap: 0px 85px;
   padding: 32px 0px 0px;
   overflow: hidden;
-  background-image: url(./img/promo.png);
+  background-image: url(../img/promo.png);
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
@@ -830,7 +830,7 @@
   height: 480px;
   border-radius: 32px;
   overflow: hidden;
-  background-image: url(./img/team-member.png);
+  background-image: url(../img/team-member.png);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -905,7 +905,7 @@
 }
 
 .homepage .div-wrapper {
-  background-image: url(./img/team-member-1.png);
+  background-image: url(../img/team-member-1.png);
   position: relative;
   width: 384px;
   height: 480px;
@@ -916,7 +916,7 @@
 }
 
 .homepage .team-member-2 {
-  background-image: url(./img/team-member-2.png);
+  background-image: url(../img/team-member-2.png);
   position: relative;
   width: 384px;
   height: 480px;
@@ -927,7 +927,7 @@
 }
 
 .homepage .team-member-3 {
-  background-image: url(./img/team-member-3.png);
+  background-image: url(../img/team-member-3.png);
   position: relative;
   width: 384px;
   height: 480px;
@@ -1474,7 +1474,7 @@
 .homepage .slogan-2 {
   width: 630px;
   height: 334px;
-  background-image: url(./img/slogan-1.png);
+  background-image: url(../img/slogan-1.png);
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
@@ -1982,7 +1982,7 @@
   height: 13px;
   top: 5px;
   left: 6px;
-  background-image: url(./img/left-2.svg);
+  background-image: url(../img/left-2.svg);
   background-size: 100% 100%;
 }
 
@@ -2041,7 +2041,7 @@
   height: 9px;
   top: 1px;
   left: 10px;
-  background-image: url(./img/union-2.svg);
+  background-image: url(../img/union-2.svg);
   background-size: 100% 100%;
 }
 
