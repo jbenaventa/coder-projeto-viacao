@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="homepage">
+
+      <!--HEADER AREA-->
+      <div class="header">
+        <div class="header-container-wrapper">
+          <div class="container">
+            <div class="content">
+
+              <!--LOGO-->
+              <a href="Home"><img class="header-logo" src="img/logo-2.svg" /></a>
+
+              <!--LINKS DE NAVEGAÇÃO(Primeiro bloco)-->
+              <div class="navigation">
+                <button class="button">
+                  <div class="button-base"><div class="text"><a href="Home" class="button-a-default">Início</a></div></div>
+                </button> 
+                
+                <div class="dropdown-header">
+                  <button class="button">
+                    <div class="button-base">.
+                      <div class="text"><a href="Rotas" class="button-a-default">Rotas e horários</a></div>
+                      <img class="img-2" src="img/chevron-down-5.svg" />
+                    </div>
+                  </button>
+                </div>
+                
+                <div class="dropdown-header">
+                  <button class="button">
+                    <div class="button-base">
+                      <div class="text"><a href="Servicos" class="button-a-default">Serviços</a></div>
+                      <img class="img-2" src="img/chevron-down-5.svg" />
+                    </div>
+                  </button>
+                </div>
+                
+                <button class="button">
+                  <div class="button-base"><div class="text"><a href="Servicos" class="button-a-default">Dúvidas frequentes</a></div></div>
+                </button>
+
+              </div>
+            </div>
+            <!--LINKS DE NAVEGAÇÃO(Segundo Bloco)-->
+            <div class="div">
+              <button class="button-base-wrapper">
+                <div class="button-base-2">
+                  <img class="img-2" src="img/shopping-cart-2.svg" />
+                  <div class="text"><a href="Carrinho" class="button-a-default">Carrinho</a></div>
+                </div>
+              </button>
+              <div class="button-main">
+                <div class="button-main-base">
+                  <p><a href="Minha conta" class="button-main-text">Minha conta</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--AREA DOS BANNERS-->
+      <div class="banners">
+
+        <!--CAIXA DE PESQUISA-->
+        <div class="caixadepesquisa">
+          
+            <!--RADIOS-->
+            <div class="content-2">
+            <div class="frame-2">
+              <div class="div">
+                <input type="radio" name="viagem" value="Só ida" class="checkbox-base"/>
+                <div class="text-wrapper">Só ida</div>
+              </div>
+              <div class="div">
+                <input type="radio" name="viagem" value="Idaevolta" class="checkbox-base"/>
+                <div class="text-wrapper">Ida e Volta</div>
+              </div>
+            </div>
+
+        <!--INPUT FIELDS-->
+
+            <!--SAINDO DE-->
+            <div class="input-field">
+              <div class="div-2">
+                <label for="input" class="label">Saindo de</label>
+                <input type="text" class="input" placeholder="Digite a cidade de origem"></input>
+              </div>
+            </div>
+            <!--INDO PARA-->
+            <div class="input-field">
+              <div class="div-2">
+                <label for="input" class="label">Indo para</label>
+                <input type="text" class="input" placeholder="Digite a cidade destino"></input>
+              </div>
+            </div>
+            <!--DATA DE IDA-->
+            <div class="input-field">
+              <div class="div-2">
+                <div class="div-2">
+                  <div class="label">Data de ida</div>
+                  <div class="input">
+                      <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                    <img class="chevron-down" src="img/chevron-down-9.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--DATA DE VOLTA-->
+            <div class="input-field">
+              <div class="div-2">
+                <div class="div-2">
+                  <div class="label">Data de volta</div>
+                  <div class="input">
+                      <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                    <img class="chevron-down" src="img/chevron-down-9.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--BOTÃO-->
+          <div class="button-main"  style="width: 100%;">
+            <div class="button-main-base"  style="width: 100%;">
+              <img class="button-icon" src="img/search.svg" />
+              <p><a href="Pesquisa" id="search" class="button-main-text">Procurar</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      <!--SLOGAN-->
+        <div class="frame-3">
+          <div class="slogan">
+            <p class="hero-text">Há mais de 40 anos fazendo parte da história do litoral paranaense!</p>
+            <img class="frame-4" src="img/frame-5.svg" />
+          </div>
+
+      <!--BUS-->
+        <div class="busimage-wrapper"><img class="busimage" src="img/image-12.png" /></div>
+        </div>
+      
+      <!--SOCIAL MEDIA-->
+        <div class="social-media-post-bg">
+          <div class="social-media-bottom-panel">
+            <div class="attribution-card">
+              <img src="img/social-icon-2.svg" />
+                <div class="heading-and-icon">
+                  <div class="name"><a href="externallink" class="name">Visite o nosso Instagram</a></div>
+                  <div class="icon-wrap"><img class="img-3" src="img/arrow-up-right-4.svg" /></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ROTAS POPULARES-->
+
+      
+        <div class="route-sections">
+          <div class="route-container">
+            <div class="route-container-heading">
+              <div class="content-wrapper">
+                <div class="route-heading">
+                <h1 class="heading">Rotas populares</h1>
+                <p class="supporting-text">Faça o melhor trajeto com a Graciosa.</p>
+              </div>
+            </div>
+
+            <div class="actions">
+                <div class="button-secondary">
+                  <div class="button-secondary-base">
+                    <p><a href="Minha conta" class="button-secondary-text">Confira todas as rotas e horários</a></p>
+                    <img class="button-icon" src="img/arrow-right-2.svg" />
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="team-members-wrapper">
+            <div class="team-members">
+              <div class="team-member">
+                <div class="bottom-panel-2">
+                  <img class="divider" src="img/divider-1.svg" />
+                  <div class="attribution-card-2">
+                    <img class="vector" src="img/vector-3.svg" />
+                    <div class="div-3">
+                      <div class="heading-and-icon">
+                        <div class="name-2">Curitiba</div>
+                        <div class="arrow-up-right-wrapper"><img class="img-3" src="img/arrow-up-right-4.svg" /></div>
+                      </div>
+                      <div class="role">Ilha do Mel</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="bottom-panel-2">
+                  <img class="divider" src="img/divider-2.svg" />
+                  <div class="attribution-card">
+                    <img class="vector" src="img/vector-3.svg" />
+                    <div class="div-3">
+                      <div class="heading-and-icon">
+                        <div class="name-2">Curitiba</div>
+                        <div class="arrow-up-right-wrapper"><img class="img-3" src="img/arrow-up-right-4.svg" /></div>
+                      </div>
+                      <div class="role">Guaratuba</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-member-2">
+                <div class="bottom-panel-2">
+                  <img class="divider" src="img/divider-3.svg" />
+                  <div class="attribution-card">
+                    <img class="vector" src="img/vector-3.svg" />
+                    <div class="div-3">
+                      <div class="heading-and-icon">
+                        <div class="name-2">Curitiba</div>
+                        <div class="arrow-up-right-wrapper"><img class="img-3" src="img/arrow-up-right-4.svg" /></div>
+                      </div>
+                      <div class="role">Paranaguá</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-member-3">
+                <div class="bottom-panel-2">
+                  <img class="divider" src="img/divider-4.svg" />
+                  <div class="attribution-card">
+                    <img class="vector" src="img/vector-3.svg" />
+                    <div class="div-3">
+                      <div class="heading-and-icon">
+                        <div class="name-2">Antonina</div>
+                        <div class="arrow-up-right-wrapper"><img class="img-3" src="img/arrow-up-right-5.png" /></div>
+                      </div>
+                      <div class="role">Curitiba</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrows">
+          <div class="arrow-button"><img class="img-3" src="img/arrow-left-2.svg" /></div>
+          <div class="arrow-button"><img class="img-3" src="img/arrow-right-3.svg" /></div>
+        </div>
+
+      </div>
+
+      <!--POR QUE COMPRAR CONOSCO-->
+      <div class="perk-section">
+        <div class="title-container" style="align-self: center;">
+          <div class="heading-and-3">
+            <h1 class="heading" style="color: white;">Por que comprar conosco?</h1>
+          </div>
+          </div>
+
+        <div class="perks">
+
+          <div class="perks-container">
+            
+            <div class="perk-card">
+              <div class="featured-icon"><img src="img/briefcase-1.svg" /></div>
+              <div class="text-and-supporting">
+                <div class="text-xl-semibold ">Sem cobrança de bagagem</div>
+                <p class="text-md-regular">Gratuidade até 3 volumes ou 30 quilos de bagagem.</p>
+              </div>
+            </div>
+
+            <div class="perk-card">
+              <div class="featured-icon"><img src="img/message-circle-1.svg" /></div>
+              <div class="text-and-supporting">
+                <div class="text-xl-semibold ">Suporte dedicado</div>
+                <p class="text-md-regular">
+                  Suporte 24 horas via telefone e WhatsApp para maior comodidade ao cliente.
+                </p>
+              </div>
+            </div>
+
+            <div class="perk-card">
+              <div class="featured-icon"><img src="img/dollar-sign-1.svg" /></div>
+              <div class="text-and-supporting">
+                <div class="text-xl-semibold">Menor preço</div>
+                <p class="text-md-regular">
+                  Preços com descontos imperdíveis você encontra aqui, confira os destinos disponíveis.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--CONHEÇA OS NOSSOS SERVIÇOS-->
+
+      <div class="services-section">
+        <div class="route-container">
+          <div class="title-container">
+            <div class="heading-and-3">
+              <div class="div-4"><div class="heading">Conheça os nossos serviços</div></div>
+              <p class="supporting-text">A Graciosa oferece diversas soluções para seu conforto.</p>
+            </div>
+          </div>
+          </div>
+
+        <div class="container-3">
+          <div class="content-6">
+            <div class="contact-text-2">
+              <div class="div-wrapper-2">
+                <div class="icon"><img class="rectangle" src="img/rectangle-1.png" /></div>
+              </div>
+              <div class="text-and-supporting-2">
+                <div class="text-5">Litoral Card</div>
+                <div class="supporting-text-3">Compre e gerencie aqui.</div>
+              </div>
+            </div>
+            <div class="contact-text-2">
+              <div class="div-wrapper-2">
+                <div class="metrocard"><img class="image-2" src="img/image-4.png" /></div>
+              </div>
+              <div class="text-and-supporting-2">
+                <div class="text-5">Metrocard</div>
+                <div class="supporting-text-3">Saiba mais.</div>
+              </div>
+            </div>
+            <div class="contact-text-2">
+              <div class="div-wrapper-2">
+                <div class="message-circle"><img class="image-3" src="img/image-2-1.png" /></div>
+              </div>
+              <div class="text-and-supporting-2">
+                <div class="text-5">Graciosa Transportes</div>
+                <div class="supporting-text-3">Soluções de transporte turístico.</div>
+              </div>
+            </div>
+            <div class="contact-text-2">
+              <div class="div-wrapper-2">
+                <div class="message-circle-2"><img class="image-4" src="img/image-5.png" /></div>
+              </div>
+              <div class="text-and-supporting-2">
+                <div class="text-5">Cargas e Encomendas</div>
+                <p class="supporting-text-3">Seus pacotes seguros com a Graciosa.</p>
+              </div>
+            </div>
+            <div class="contact-text-2">
+              <div class="marumbi">
+                <div class="mail"><img class="image-5" src="img/image-7.png" /></div>
+              </div>
+              <div class="text-and-supporting-2">
+                <div class="text-5">Viação Marumbi</div>
+                <div class="supporting-text-3">Seu transporte metropolitano.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--A NOSSA HISTORIA-->
+      <div class="history-section">
+        <div class="history-container">
+          <div class="classic-hero"><img class="image" src="img/hero-vintage.png"></div>
+          <div class="elements-container">
+            <img class="vector" src="img/logo-grupo.svg" />
+            <div class="heading">A nossa história</div>
+                <p class="paragraph">
+                  A história da Viação Graciosa começa em 1979 com a missão de conectar o litoral paranaense e a capital
+                  do estado. O trajeto era feito pela Estrada Graciosa, aberta por Jesuítas há mais de 100 anos como única
+                  ligação entre capital e litoral – daí o nome da viação. No início, a Graciosa operava apenas linhas
+                  intermunicipais no Paraná, com o tempo porém, foi ganhando espaço no transporte metropolitano (como em
+                  Curitiba) e rotas interestaduais. Até chegar ao momento atual, com cerca de 150 ônibus circulando pela
+                  região Sul/Sudeste.
+                </p>
+
+            <div class="button-main">
+                  <div class="button-main-base">
+                    <p><a href="Minha conta" class="button-main-text">Saiba mais</a></p>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--DUVIDAS FREQUENTES-->
+
+      <div class="contact-page-header">
+        <div class="frame-5">
+          <div class="heading-wrapper"><div class="heading-4">Dúvidas frequentes</div></div>
+          <div class="frame-6">
+            <div class="frame-7">
+              <div class="frame-8">
+                <div class="frame-9">
+                  <p class="text-wrapper-3">Como transferir ou cancelar minha passagem?</p>
+                  <img class="group" src="img/group-35602.png" />
+                </div>
+                <p class="text-wrapper-4">
+                  Você pode cancelar a sua passagem comprada pela internet e ainda não emitida, até 3 horas antes do
+                  início da viagem.
+                </p>
+              </div>
+            </div>
+            <div class="frame-7">
+              <div class="frame-10">
+                <p class="text-wrapper-5">Qual o limíte de bagagens?</p>
+                <img class="img-3" src="img/chevron-down-10.svg" />
+              </div>
+              <img class="line" src="img/line-6.svg" />
+            </div>
+            <div class="frame-7">
+              <div class="frame-11">
+                <div class="text-wrapper-5">Posso transportar animais?</div>
+                <img class="img-3" src="img/chevron-down-11.svg" />
+              </div>
+              <img class="line" src="img/line-6-1.svg" />
+            </div>
+            <div class="frame-7">
+              <div class="frame-10">
+                <div class="text-wrapper-5">Posso transportar bicicletas?</div>
+                <img class="img-3" src="img/chevron-down-12.svg" />
+              </div>
+              <img class="line" src="img/line-6-2.svg" />
+            </div>
+            <div class="frame-7">
+              <div class="frame-10">
+                <div class="text-wrapper-5">Crianças podem viajar sozinhas?</div>
+                <img class="img-3" src="img/chevron-down-13.svg" />
+              </div>
+            </div>
+          </div>
+          <button class="button-3">
+            <div class="button-base-6">
+              <div class="text-7">Ver todas as informações</div>
+              <img class="img-2" src="img/arrow-right-4.svg" />
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+      
+      <footer class="footer">
+        <div class="section">
+          <div class="container-5">
+            <div class="content-8">
+              <div class="logo-and-supporting">
+                <img class="header-logo" src="img/logo-3.svg" />
+                <p class="supporting-text-4">
+                  Há mais de 40 anos fazendo parte da história do nosso Litoral Paranaense!
+                </p>
+              </div>
+              <div class="links">
+                <div class="div-3">
+                  <div class="heading-5">Menu</div>
+                  <div class="div-4">
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">Comprar passagens</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">Graciosa Transporte</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">Cargas e encomendas</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">Viação Marumbi</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <div class="button-4"><div class="button-base"></div></div>
+                    </div>
+                    <div class="footer-link">
+                      <div class="button-4"><div class="button-base"></div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="div-3">
+                  <div class="heading-5">Compania</div>
+                  <div class="div-4">
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">O Grupo</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">Dúvidas frequentes</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">Agências</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <button class="button">
+                        <div class="button-base"><div class="text">Contato</div></div>
+                      </button>
+                    </div>
+                    <div class="footer-link">
+                      <div class="button-4"><div class="button-base"></div></div>
+                    </div>
+                    <div class="footer-link">
+                      <div class="button-4"><div class="button-base"></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-9">
+                <div class="div-5">
+                  <div class="div-3">
+                    <img class="img-3" src="img/mail-8.svg" />
+                    <div class="text-and-supporting-2">
+                      <div class="text-8">Email</div>
+                      <div class="supporting-text-4">graciosa@viacaograciosa.com.br</div>
+                    </div>
+                  </div>
+                  <div class="div-3">
+                    <img class="img-3" src="img/phone-3.svg" />
+                    <div class="text-and-supporting-2">
+                      <div class="text-8">Telefone</div>
+                      <div class="supporting-text-4">(41) 3223-0873</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-12">
+                  <div class="row">
+                    <div class="div-3">
+                      <img class="img-3" src="img/map-pin-3.svg" />
+                      <div class="text-and-supporting-2">
+                        <div class="text-8">Endereço</div>
+                        <p class="supporting-text-4">Rua Joquei Club, 188<br />Prado Velho - Curitiba - PR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame-13">
+                    <div class="footer-links-column"><p class="heading-5">Fique por dentro das novidades</p></div>
+                    <div class="social-icons">
+                      <img class="img-3" src="img/social-icon-3.svg" />
+                      <img class="img-3" src="img/social-icon-4.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-10"></div>
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="container-6">
+            <div class="content-11">
+              <p class="text-wrapper-2">Grupo Graciosa © 2024. Todos os direitos reservados.</p>
+              <div class="frame-14">
+                <div class="payment-method-icon"><img class="visa-logo" src="img/visa-logo-2.svg" /></div>
+                <div class="payment-method-icon">
+                  <div class="mastercard">
+                    <div class="overlap-group">
+                      <img class="right" src="img/right-2.svg" /> <img class="middle" src="img/middle-2.svg" />
+                    </div>
+                  </div>
+                </div>
+                <div class="AMEX-wrapper"><img class="AMEX" src="img/amex-2.svg" /></div>
+                <div class="payment-method-icon">
+                  <div class="google-pay">
+                    <div class="pay"></div>
+                    <img class="g" src="img/g-1.png" />
+                  </div>
+                </div>
+                <div class="frame-15"><img class="image-6" src="img/image-1-1.png" /></div>
+                <div class="frame-15"><img class="image-7" src="img/image-2-3.png" /></div>
+                <div class="frame-15"><img class="logo-pix-icone" src="img/logo-pix-icone-512-300x300-1-1.png" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
