@@ -694,6 +694,30 @@
   flex: 0 0 auto;
 }
 
+.homepage .faq-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1280px;
+  align-items: flex-center;
+  gap: 32px;
+  padding: 0px 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.homepage .faq-section {
+  display: flex;
+width: 100%;
+height: 726px;
+padding: 64px 74px 41px 74px;
+flex-direction: column;
+align-items: center;
+gap: 37px;
+flex-shrink: 0;
+}
+
+
 .homepage .route-container-heading {
   display: flex;
   align-items: flex-start;
@@ -755,6 +779,19 @@
 .homepage .supporting-text {
   position: relative;
   align-self: stretch;
+  font-family: var(--text-xl-regular-font-family);
+  font-weight: var(--text-xl-regular-font-weight);
+  color: var(--gray-600);
+  font-size: var(--text-xl-regular-font-size);
+  letter-spacing: var(--text-xl-regular-letter-spacing);
+  line-height: var(--text-xl-regular-line-height);
+  font-style: var(--text-xl-regular-font-style);
+}
+
+.homepage .accordion-text {
+  position: center;
+  max-width: 800px;
+  align-self: center;
   font-family: var(--text-xl-regular-font-family);
   font-weight: var(--text-xl-regular-font-weight);
   color: var(--gray-600);
@@ -1051,13 +1088,13 @@
 
 .homepage .featured-icon {
   display: flex;
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  width: 60px;
+  height: 60px;
+  padding: 0px;
   justify-content: center;
   align-items: center;
 
-  border-radius: 28px;
+  border-radius: 36px;
   border: 8px solid var(--Brand-700, #095F36);
   background: var(--Brand-700, #095F36);
 }
@@ -1164,40 +1201,47 @@
 
 .history-section .history-container {
   display: flex;
-  width: 75%;
+  width: 100%;
   height: 553px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 146px;
-  position: relative;
+  flex-shrink: 0;
+  padding-left: 40%;
+  padding-right:10%;
+  
 }
 
 .history-section .classic-hero {
-  position: relative;
-  width: 478px;
-  height: 478px;
-  border-radius: 400px;
+  display: flex;
+  padding-top: 19.5px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.history-section .image {
+.history-section .coverimage {
   position: absolute;
   width: 875px;
   height: 666px;
-  top: 20px;
-  left: -120px;
+  top: 150px;
+  left: 0%;
   object-fit: cover;
 }
 
 .history-section .elements-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
   padding: 32px 0px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  max-height: 553px;
+
+  background: rgba(255, 255, 255, 0.70);
+
+  /* Background blur / xl */
+  backdrop-filter: blur(20px);
 }
 
 .history-section .vector {
@@ -1240,6 +1284,7 @@
   letter-spacing: var(--text-lg-regular-letter-spacing);
   line-height: var(--text-lg-regular-line-height);
   font-style: var(--text-lg-regular-font-style);
+  max-height: 450px;
 }
 
 .history-section .button-history {
@@ -1303,10 +1348,10 @@
   top: 9px;
 }
 
-.homepage .rectangle {
-  position: absolute;
+.homepage .litcardsize {
+  position: relative;
   width: 48px;
-  height: 29px;
+  height: 26px;
   top: 0;
   left: 0;
 }
@@ -1364,24 +1409,23 @@
   left: 8px;
 }
 
+.homepage .image-3 {
+  width: 46px;
+  height: 18px;
+
+}
+
 .homepage .message-circle {
+  display: flex;
   width: 47px;
   height: 47px;
+  padding: 15px 1px 14px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
   position: relative;
-  top: 1px;
-  box-shadow: var(--shadow-sm);
 }
 
-
-
-.homepage .message-circle-2 {
-  width: 46px;
-  height: 46px;
-  left: 2px;
-  position: relative;
-  top: 1px;
-  box-shadow: var(--shadow-sm);
-}
 
 .homepage .image-4 {
   position: absolute;
@@ -1494,6 +1538,17 @@
   flex: 0 0 auto;
 }
 
+.homepage .card-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
 .homepage .paragraph {
   position: relative;
   align-self: stretch;
@@ -1546,26 +1601,20 @@
   font-style: var(--text-md-semibold-font-style);
 }
 
-.homepage .contact-page-header {
+.faq-container{
   display: flex;
-  width: 1445px;
-  align-items: center;
+  width: 100%;
   justify-content: center;
-  position: relative;
-  flex: 0 0 auto;
-  margin-right: -5px;
-  background-color: var(--white);
+  align-items: center;
 }
 
-.homepage .frame-5 {
+.elements-container{
   display: flex;
+  width: 510px;
   flex-direction: column;
-  width: 1399px;
-  height: 726px;
-  align-items: center;
-  gap: 37px;
-  padding: 64px 74px 41px;
-  position: relative;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
 }
 
 .homepage .heading-wrapper {
@@ -1590,44 +1639,6 @@
   align-self: stretch;
   margin-top: -1px;
   font-style: var(--display-lg-medium-font-style);
-}
-
-.homepage .frame-6 {
-  display: flex;
-  flex-direction: column;
-  width: 1251px;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.homepage .frame-7 {
-  display: flex;
-  flex-direction: column;
-  width: 900px;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.homepage .frame-8 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 17px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.homepage .frame-9 {
-  display: flex;
-  width: 885px;
-  height: 55px;
-  align-items: center;
-  gap: 33px;
-  position: relative;
 }
 
 .homepage .text-wrapper-3 {
@@ -1665,15 +1676,6 @@
   font-style: var(--text-lg-regular-font-style);
 }
 
-.homepage .frame-10 {
-  display: flex;
-  align-items: center;
-  gap: 55px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
 
 .homepage .text-wrapper-5 {
   position: relative;
