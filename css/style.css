@@ -790,7 +790,7 @@ flex-shrink: 0;
 
 .homepage .accordion-text {
   position: center;
-  max-width: 800px;
+  width: 800px;
   align-self: center;
   font-family: var(--text-xl-regular-font-family);
   font-weight: var(--text-xl-regular-font-weight);
