@@ -12,29 +12,29 @@
     <script src="node_modules/flowbite/dist/flowbite.js"></script>
 </head>
 <body>
-  <main class="justify-center px-20 py-14 bg-emerald-50 max-md:px-5">
-    <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-      <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-        <form class="flex flex-col grow justify-end p-6 mx-auto w-full bg-white shadow-xl rounded-[30px] max-md:px-5 max-md:mt-10">
-          <fieldset class="flex gap-5">
-            <div class="flex gap-3">
-              <div class="flex flex-col justify-center p-1.5 my-auto border border-orange-600 border-solid fill-purple-50 stroke-[1px] stroke-orange-600">
-                <div class="shrink-0 w-2 h-2 bg-orange-600 rounded-full"></div>
-              </div>
-              <label class="text-base font-medium leading-6 text-slate-700">
-                Só ida
-              </label>
-            </div>
-            <div class="flex gap-3 text-base font-medium leading-6 text-slate-700">
-              <input type="radio" class="shrink-0 my-auto w-5 h-5 bg-white rounded-xl border border-gray-300 border-solid" name="tripType" id="roundTrip" />
-              <label for="roundTrip">Ida e volta</label>
-            </div>
-          </fieldset>
-          <label for="origin" class="mt-5 text-sm font-medium leading-5 text-slate-700">
+  <!--Banners-->
+  <main class="justify-center px-20 py-14 bg-emerald-50 max-md:px-5  bg-marca-100 font-sans">
+    <div class="flex justify-center gap-1 max-md:flex-col max-md:gap-0">
+      
+      <!--Caixa de pesquisa-->
+      <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
+        <form class="flex flex-col grow justify-end p-6 mx-auto w-full caixadepesquisa-shadow max-md:px-5 max-md:mt-10 "><!--Frame-->
+        <fieldset class="flex gap-5 pt-3"><!--Radio-buttons-->
+           <div class="flex items-center mb-4">
+            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-1" class="text-wrapper">Só ida</label>
+          </div>
+          <div class="flex items-center mb-4">
+            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-1" class="text-wrapper">Ida e volta</label>
+          </div>
+
+        </fieldset>
+          <label for="origin" class="text-wrapper">
             Saindo de
           </label>
           <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
-          <label for="destination" class="mt-5 text-sm font-medium leading-5 text-slate-700">
+          <label for="destination" class="text-wrapper">
             Indo para
           </label>
           <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
@@ -64,36 +64,141 @@
           </button>
         </form>
       </section>
-      <section class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+    
+      <!--Banner instagram-->  
+      <section class="max-w-[400px] max-h-[530] flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full rounded-[32px] overflow-hidden">
+        
         <div class="flex overflow-hidden relative flex-col flex-wrap grow justify-between content-end pt-8 border border-gray-300 border-solid aspect-[0.76] max-md:mt-10">
-          <img loading="eager" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cd24dc1c47004940ae16025dc11eab6346f84ae7ba08800aef1c097acdb2c9fc?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="object-cover absolute inset-0 size-full" alt="Background image" />
-          <div class="flex relative flex-col justify-center pt-20 mt-64 w-full rounded-3xl max-md:mt-10">
-          <div class="shrink-0 mt-4 h-px bg-white bg-opacity-50"></div>
-            <div class=" flex gap-4 px-6 pt-6 pb-7 rounded-none backdrop-blur-md bg-white bg-opacity-30 max-md:px-5">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e9f52c55ac508ad8d9812310ea68af5489a01b7e11eb22a51da5e48a319e6994?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 self-start w-6 aspect-square" alt="Instagram icon" />
-              <div class="flex gap-4">
-                <h2 class="text-xl font-semibold leading-8 text-white">
+          <img loading="eager" src="./img/promo.png" class="object-cover absolute inset-0 size-full" alt="Background image" />
+
+        <div class="static bottom-0 content-start mt-[460px] w-full h-full rounded-3xl max-md:mt-10 h-max-[40px]">
+            <div class="static bottom-0 flex  gap-5 px-6 pt-6 pb-8 rounded-none backdrop-blur-lg bg-gray-800 bg-opacity-30 max-md:px-5 h-full h-max-[40px] justify-center" >
+              <img loading="lazy" src="./img/social-icon-2.svg" class="shrink-0 self-start w-6 aspect-square" alt="Instagram icon" />
+                <h2 class="text-xl font-medium leading-8 text-white">
                   Visite o nosso Instagram
                 </h2>
-                <div class="flex flex-col items-center pt-1.5">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6bcafce074d2a1fbb0add269a63843303ed8f6224a2934a0589fe213885eec0f?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="w-2 aspect-[0.33]" alt="" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-      <section class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-        <div class="flex flex-col grow max-md:mt-10 max-md:max-w-full">
-          <h1 class="flex flex-col flex-wrap justify-between content-start px-8 pt-7 pb-7 text-4xl font-medium tracking-tighter leading-10 rounded-[32px] max-md:px-5 max-md:max-w-full bg-clip-text max-md:mr-0.5">
+
+      <section class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full max-w-[400px] max-h-[530]">
+        <div class="h-[218px] w-auto flex relative grow max-md:mt-10 max-md:max-w-full " >
+          <object data="img/frame-5.svg" class="absolute bottom-0 right-0 shrink-1"></object>
+          <h1 class="flex flex-col flex-wrap justify-between content-start px-8 pt-16 pb-7 hero-text"  >
             Há mais de 40 anos fazendo parte da história do litoral paranaense!
           </h1>
-          <figure class="flex flex-col flex-wrap justify-between content-start items-start pt-12 pb-6 mt-4 bg-emerald-100 rounded-[32px] max-md:pr-5 max-md:max-w-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/eaf0d838e23fc1eef24250cb62d4fe474421a92371414c0f8f2ea3b4ffe4880b?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="w-full shadow-2xl aspect-[2.27]" alt="Litoral paranaense" />
-          </figure>
+          
+        </div>
+          <div class="flex flex-col grow w-[445px] h-[236px] px-0 pt-[50px] bg-marca-200 rounded-[32px] justify-between items-end ">
+            <object data="./img/bus-hero.svg" type="image/svg+xml" class="w-[411px] h-[163px] right-[20px] top-[50px] relative"></object>
+          </div>
         </div>
       </section>
     </div>
   </main>
+
+
+  <!--FOOTER-->
+  
+
+  <footer class="bg-marca-100  dark:bg-gray-900 font-sans">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="#index" class="flex-auto space-y-5">
+                  <img src="./img/logo-2.svg" class="h-8 me-3" alt="FlowBite Logo"/>
+                  <div class="mr-7 self-center text-sm font-semibold whitespace-normal dark:text-white">Há mais de 40 anos fazendo parte da história do nosso Litoral Paranaense!</div>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900  dark:text-white">Menu</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium space-y-5">
+                      <li class="">
+                          <a href="https://flowbite.com/" class="hover:underline">Comprar passagens</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Graciosa Transportes</a>
+                      </li>
+                      <li>
+                        <a href="https://tailwindcss.com/" class="hover:underline">Cargas e encomendas</a>
+                      </li>
+                      <li>
+                        <a href="https://tailwindcss.com/" class="hover:underline">Viação Marumbi</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900  dark:text-white">Compania</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 space-y-5 font-medium">
+                      <li class="">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">O Grupo</a>
+                      </li>
+                      <li>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Dúvidas frequentes</a>
+                      </li>
+                      <li>
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Agências</a>
+                      </li>
+                      <li>
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Contato</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb- text-sm font-semibold text-gray-900  dark:text-white">Entre em contato</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium ">
+                    <li class="flex items-center space-x-2 rtl:space-x-reverse py-4">
+                      <object data="./img/mail-8.svg"></object>
+                      <div class="flex-col items-start p-">
+                        <span>Email</span>
+                        <span>graciosa@viacaograciosa.com.br</span>
+                      </div>
+                    </li>
+                    <li class="flex items-center space-x-2 rtl:space-x-reverse py-4">
+                      <object data="./img/phone-3.svg"></object>
+                      <div class="flex-col items-start space-y-2">
+                        <div>Telefone</div>
+                        <span>(41) 3223-0873</span>
+                      </div>
+                    </li>
+                    <li class="flex items-start space-x-2  rtl:space-x-reverse py-4">
+                      <object data="./img/map-pin-3.svg"></object>
+                      <div class="inline">
+                        <div>Endereço</div>
+                        <span>Rua Joquei Club, 188 Prado Velho - Curitiba - PR</span>
+                      </div>
+                    </li>
+                    
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Grupo Graciosa © 2024. Todos os direitos reservados.</a>. 
+          </span>
+          <div class="flex mt-4 sm:justify-center gap-4 sm:mt-0">
+             
+              <a>
+                <img  href="#" src="./img/pay3.png" alt="" class="w-10 h-10">
+              </a>
+              <a>
+                <img  href="#" src="./img/pay3.svg" alt="" class="w-10 h-10">
+              </a>
+              <a>
+                <img  href="#" src="./img/pay2.png" alt="" class="w-10 h-5 mt-3">
+              </a>
+              <a>
+                <img  href="#" src="./img/pay1.png" alt="" class="w-10 h-10">
+              </a>
+              <a>
+                <img  href="#" src="./img/visa-logo-2.svg" alt="" class="w-10 h-10">
+              </a>
+          </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
