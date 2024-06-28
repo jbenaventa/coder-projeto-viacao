@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/globals.css" />
     <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+
 </head>
 <body>
 
@@ -119,55 +120,72 @@
       </nav>
     <!-- Navbar-End-->
     
+    <!--Caixa de pesquisa-->
+    <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
+        <form class="flex flex-col grow justify-end p-6 mx-auto w-full caixadepesquisa-shadow max-md:px-5 max-md:mt-10 "><!--Frame-->
+        <fieldset class="flex gap-5 pt-3"><!--Radio-buttons-->
+        <div class="flex items-center mb-4">
+            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-1" class="text-wrapper">Só ida</label>
+        </div>
+        <div class="flex items-center mb-4">
+            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-1" class="text-wrapper">Ida e volta</label>
+        </div>
 
+        </fieldset>
+        <label for="origin" class="text-wrapper">
+            Saindo de
+        </label>
+        <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
+        <label for="destination" class="text-wrapper">
+            Indo para
+        </label>
+        <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
+                <div class="input-field">
+                    <div class="div-2">
+                    <div class="label">Data de ida</div>
+                    <div class="input">
+                        <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                        <img class="chevron-down" src="../img/chevron-down-9.svg" />
+                    </div>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="div-2">
+                    <div class="label">Data de ida</div>
+                    <div class="input">
+                        <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                        <img class="chevron-down" src="../img/chevron-down-9.svg" />
+                    </div>
+                    </div>
+                </div>
+        
+        <button class="flex justify-center items-center px-5 py-2.5 mt-8 w-full text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/51139065cb28121b6d7cff9a7696706534d0aa29e3a3157add432c00ca973a79?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
+            <span>Procurar</span>
+        </button>
+        </form>
+    </section>
 
-<!--Caixa de pesquisa-->
-<section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
-    <form class="flex flex-col grow justify-end p-6 mx-auto w-full caixadepesquisa-shadow max-md:px-5 max-md:mt-10 "><!--Frame-->
-    <fieldset class="flex gap-5 pt-3"><!--Radio-buttons-->
-       <div class="flex items-center mb-4">
-        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-        <label for="default-radio-1" class="text-wrapper">Só ida</label>
-      </div>
-      <div class="flex items-center mb-4">
-        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-        <label for="default-radio-1" class="text-wrapper">Ida e volta</label>
-      </div>
+    <!-- Date bar-->
 
-    </fieldset>
-      <label for="origin" class="text-wrapper">
-        Saindo de
-      </label>
-      <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
-      <label for="destination" class="text-wrapper">
-        Indo para
-      </label>
-      <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
-            <div class="input-field">
-                <div class="div-2">
-                <div class="label">Data de ida</div>
-                <div class="input">
-                    <input type="date" id="departure-date" name="departure-date" class="input-date-field">
-                    <img class="chevron-down" src="../img/chevron-down-9.svg" />
-                </div>
-                </div>
-            </div>
-            <div class="input-field">
-                <div class="div-2">
-                <div class="label">Data de ida</div>
-                <div class="input">
-                    <input type="date" id="departure-date" name="departure-date" class="input-date-field">
-                    <img class="chevron-down" src="../img/chevron-down-9.svg" />
-                </div>
-                </div>
-            </div>
-     
-      <button class="flex justify-center items-center px-5 py-2.5 mt-8 w-full text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/51139065cb28121b6d7cff9a7696706534d0aa29e3a3157add432c00ca973a79?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
-        <span>Procurar</span>
-      </button>
-    </form>
-  </section>
+    
+    <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-2xl shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+        <li class="w-full focus-within:z-10">
+            <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Profile</a>
+        </li>
+        <li class="w-full focus-within:z-10">
+            <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Dashboard</a>
+        </li>
+        <li class="w-full focus-within:z-10">
+            <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Settings</a>
+        </li>
+        <li class="w-full focus-within:z-10">
+            <a href="#" class="inline-block w-full p-4 bg-white border-s-0 border-gray-200 dark:border-gray-700 rounded-e-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Invoice</a>
+        </li>
+    </ul>
+
 
 <!--FOOTER-->
       
