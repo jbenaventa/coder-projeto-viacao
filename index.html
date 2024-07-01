@@ -124,71 +124,53 @@
       <!--AREA DOS BANNERS-->
       <div class="banners">
 
-        <!--CAIXA DE PESQUISA-->
-        <div class="caixadepesquisa">
-          
-            <!--RADIOS-->
-            <div class="content-2">
-            <div class="frame-2">
-              <div class="div">
-                <input type="radio" name="viagem" value="Só ida" class="checkbox-base"/>
-                <div class="text-wrapper-2">Só ida</div>
-              </div>
-              <div class="div">
-                <input type="radio" name="viagem" value="Idaevolta" class="checkbox-base"/>
-                <div class="text-wrapper-2">Ida e Volta</div>
-              </div>
+        <!--Caixa de pesquisa-->
+          <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
+            <form class="flex flex-col grow justify-end p-6 mx-auto w-full caixadepesquisa-shadow max-md:px-5 max-md:mt-10 "><!--Frame-->
+            <fieldset class="flex gap-5 pt-3"><!--Radio-buttons-->
+            <div class="flex items-center mb-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="p-2 label">Só ida</label>
+            </div>
+            <div class="flex items-center mb-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class=" p-2 label">Ida e volta</label>
             </div>
 
-        <!--INPUT FIELDS-->
-
-            <!--SAINDO DE-->
-            <div class="input-field">
-              <div class="div-2">
-                <label for="input" class="label">Saindo de</label>
-                <input type="text" class="input" placeholder="Digite a cidade de origem"></input>
-              </div>
-            </div>
-            <!--INDO PARA-->
-            <div class="input-field">
-              <div class="div-2">
-                <label for="input" class="label">Indo para</label>
-                <input type="text" class="input" placeholder="Digite a cidade destino"></input>
-              </div>
-            </div>
-            <!--DATA DE IDA-->
-            <div class="input-field">
-                <div class="div-2">
-                  <div class="label">Data de ida</div>
-                  <div class="input">
-                      <input type="date" id="departure-date" name="departure-date" class="input-date-field">
-                    <img class="chevron-down" src="img/chevron-down-9.svg" />
-                  </div>
-                </div>
-            </div>
-            <!--DATA DE VOLTA-->
-            <div class="input-field">
-              <div class="div-2">
-                <div class="div-2">
-                  <div class="label">Data de volta</div>
-                  <div class="input">
-                      <input type="date" id="departure-date" name="departure-date" class="input-date-field">
-                    <img class="chevron-down" src="img/chevron-down-9.svg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--BOTÃO-->
-          <div class="button-main"  style="width: 100%;">
-            <div class="button-main-base"  style="width: 100%;">
-              <img class="button-icon" src="img/search.svg" />
-              <p><a href="Pesquisa" id="search" class="button-main-text">Procurar</a></p>
-            </div>
-          </div>
-
-        </div>
+            </fieldset>
+            <label for="origin" class="label pb-2">
+                Saindo de
+            </label>
+            <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
+            <label for="destination p" class="label pt-2 pb-2">
+                Indo para
+            </label>
+            <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
+                    <div class="input-field">
+                        <div class="div-2">
+                        <div class="label label pt-2 pb-2">Data de ida</div>
+                        <div class="input">
+                            <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                            <img class="chevron-down" src="../img/chevron-down-9.svg" />
+                        </div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <div class="div-2">
+                        <div class="label label pt-2 pb-2">Data de volta</div>
+                        <div class="input">
+                            <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                            <img class="chevron-down" src="../img/chevron-down-9.svg" />
+                        </div>
+                        </div>
+                    </div>
+            
+            <button class="flex justify-center items-center px-5 py-2.5 mt-8 w-full text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/51139065cb28121b6d7cff9a7696706534d0aa29e3a3157add432c00ca973a79?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
+                <span>Procurar</span>
+            </button>
+            </form>
+        </section>
 
       <!--SLOGAN-->
         <div class="frame-3">

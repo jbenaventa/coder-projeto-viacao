@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados - Viação Graciosa </title>
 
-    <link rel="stylesheet" href="../src/output.css" />
-    <link rel="stylesheet" href="../css/styleguide.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./css/styleguide.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/globals.css" />
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
 
 </head>
 <body>
@@ -119,32 +119,34 @@
   
       </nav>
     <!-- Navbar-End-->
-    
+   
+    <div class="flex justify-center gap-4 p-4 w-max-[1200px]"><!--Inicio de flexbox-->
+
     <!--Caixa de pesquisa-->
     <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
         <form class="flex flex-col grow justify-end p-6 mx-auto w-full caixadepesquisa-shadow max-md:px-5 max-md:mt-10 "><!--Frame-->
         <fieldset class="flex gap-5 pt-3"><!--Radio-buttons-->
         <div class="flex items-center mb-4">
             <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="default-radio-1" class="text-wrapper">Só ida</label>
+            <label for="default-radio-1" class="p-2 label">Só ida</label>
         </div>
         <div class="flex items-center mb-4">
             <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="default-radio-1" class="text-wrapper">Ida e volta</label>
+            <label for="default-radio-1" class=" p-2 label">Ida e volta</label>
         </div>
 
         </fieldset>
-        <label for="origin" class="text-wrapper">
+        <label for="origin" class="label pb-2">
             Saindo de
         </label>
         <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
-        <label for="destination" class="text-wrapper">
+        <label for="destination p" class="label pt-2 pb-2">
             Indo para
         </label>
         <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
                 <div class="input-field">
                     <div class="div-2">
-                    <div class="label">Data de ida</div>
+                    <div class="label label pt-2 pb-2">Data de ida</div>
                     <div class="input">
                         <input type="date" id="departure-date" name="departure-date" class="input-date-field">
                         <img class="chevron-down" src="../img/chevron-down-9.svg" />
@@ -153,7 +155,7 @@
                 </div>
                 <div class="input-field">
                     <div class="div-2">
-                    <div class="label">Data de ida</div>
+                    <div class="label label pt-2 pb-2">Data de volta</div>
                     <div class="input">
                         <input type="date" id="departure-date" name="departure-date" class="input-date-field">
                         <img class="chevron-down" src="../img/chevron-down-9.svg" />
@@ -170,22 +172,26 @@
 
     <!-- Date bar-->
 
-    
-    <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-2xl shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
-        <li class="w-full focus-within:z-10">
-            <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Profile</a>
-        </li>
-        <li class="w-full focus-within:z-10">
-            <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Dashboard</a>
-        </li>
-        <li class="w-full focus-within:z-10">
-            <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Settings</a>
-        </li>
-        <li class="w-full focus-within:z-10">
-            <a href="#" class="inline-block w-full p-4 bg-white border-s-0 border-gray-200 dark:border-gray-700 rounded-e-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Invoice</a>
-        </li>
-    </ul>
+      <div class="inline-flex rounded-md shadow-sm h-[72px] max-w-[800px]" role="group">
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-s-2xl hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          Profile
+        </button>
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          Settings
+        </button>
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-l border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          Settings
+        </button>
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-e-2xl hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          Downloads
+        </button>
+        
+      </div>
 
+
+  </div><!--FINAL FLEXBOX-->
+
+  
 
 <!--FOOTER-->
       
