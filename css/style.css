@@ -523,10 +523,11 @@
  .hero-text{
   display: flex;
   width: auto;
-  height: 218px;
+  height: fit;
   flex-direction: column;
   justify-content: center;
   position: center;
+  overflow: visible;
 
   font-feature-settings: 'ss01' on;
   font-family: Lexend;

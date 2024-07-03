@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Viação Graciosa </title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./css/styleguide.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/globals.css" />
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="./node_modules/flowbite/dist/datepicker.js"></script>
+
+</head>
+<body>
+
+    <!-- Navbar-Start-->
+    <nav class="bg-marca-100 border-gray-200 dark:bg-gray-900 font-sans">
+
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-evenly mx-auto p-6">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="../img/logo-2.svg" class="h-8" alt="Viação Graciosa Logo"/>
+        </a> <!-- Logo-->  
+            
+        <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"><!-- Container de links e botões-->
+  
+          <!-- Carrinho e conta -->
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+              
+              <!-- Botão de carrinho -->
+               
+            <button id="dropdownDefaultButton" data-dropdown-toggle="carrinho" class="text-gray-700 hover:bg-marca-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-mad px-5 py-2.5 text-center inline-flex items-center" type="button"><object data="./img/shopping-cart-2.svg" class="w-5 h-5 me-3"></object>Carrinho <object class="w-5 h-5 ms-3" data="./img/chevron-down-12.svg"></object>
+              </button>
+              
+              <!-- Dropdown menu -->
+              <div id="carrinho" class="z-10 hidden lg-dropshadow px-6">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li class="py-4">
+                      <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+                          <object data="./img/end-to-end.svg" class="max-h-12"></object>
+            
+                          <div class="flex-1 min-w-0">
+                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                12:00 - Curitiba
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                13:30 - Ilha do Mel
+                            </p>
+                          </div>
+            
+                          <div class="flex-row justify-center min-w-0">
+                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                CONVENCIONAL
+                            </p>
+                            <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                                Poltrona: 24
+                            </p>
+                          </div>
+            
+                          <div class="flex justify-center min-w-0">
+                            <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                            <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                                1:30
+                            </p>
+                          </div>
+                          
+                          <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                            40,00 R$
+                          </div>
+            
+                          <button type="button" class="inline-flex items-center text-base font-semibold text-red-800 dark:text-white"><object data="./img/trash.svg" class="w-5 h-5 me-3"></object>
+                           Remover
+                          </button>
+                      </div>
+                    </li>
+                    <li class="py-4">
+                      <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+                          <object data="./img/end-to-end.svg" class="max-h-12"></object>
+            
+                          <div class="flex-1 min-w-0">
+                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                12:00 - Curitiba
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                13:30 - Ilha do Mel
+                            </p>
+                          </div>
+            
+                          <div class="flex-row justify-center min-w-0">
+                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                CONVENCIONAL
+                            </p>
+                            <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                                Poltrona: 24
+                            </p>
+                          </div>
+            
+                          <div class="flex justify-center min-w-0">
+                            <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                            <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                                1:30
+                            </p>
+                          </div>
+                          
+                          <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                            40,00 R$
+                          </div>
+            
+                          <button type="button" class="inline-flex items-center text-base font-semibold text-red-800 dark:text-white"><object data="./img/trash.svg" class="w-5 h-5 me-3"></object>
+                           Remover
+                          </button>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="inline-flex w-full justify-between items-center">
+                    <div class="inline-flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                      Total: 80,00 R$
+                    </div>
+                  <button class="flex justify-center items-center px-5 py-2.5 mt-2 mb-6 w-18 text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
+                    <object data="./img/shopping-cart.svg" class="w-5 h-5 me-3 text-marca-25"></object>
+                   Comprar
+                  </button>
+                  </div>
+              </div>
+  
+
+          
+
+  
+              <!-- Botão de conta -->
+              <button type="button" class="flex text-white bg-marca-500 hover:bg-marca-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-md px-5 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">Minha conta</button>
+              </div> 
+  
+              <!-- Dropdown menu: Conta -->
+              <div class="z-50 hidden p-4 my-4 text-base list-none lg-dropshadow" id="user-dropdown">
+                  <div class="px-4 py-3 border-b-gray-400">
+                    <object data="./img/pfp.svg" class="max-h-12"></object>
+                    <span class="block text-md font-semibold text-gray-900 dark:text-white">Mateus da Silva</span>
+                    <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">+12-3456-78910</span>
+                  </div>
+                  <ul class="py-2" aria-labelledby="user-menu-button">
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Informação pessoal</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Histórico de passagens</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Suporte</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Encerrar sessão</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End of Dropdown menu -->
+          
+      <!--Links de navegação-->
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-marca-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li><!--Inicio-->
+              <a href="index.html" class="block py-2 px-3 text-gray-700 bg-marca-700 rounded md:bg-transparent md:text-marca-700 md:p-0 md:dark:text-marca-500" aria-current="page">Início</a>
+            </li>
+            <li><!--Rotas e Horários-->
+              <a href="index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-marca-700 md:p-0 dark:text-white md:dark:hover:text-marca-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Rotas e Horários</a>
+            </li>
+            <li><!--Serviços-->
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarServicos" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-marca-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-marca-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Serviços<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg></button>
+
+              <!-- Dropdown menu-Serviços -->
+                <div id="dropdownNavbarServicos" class="z-10 hidden p-4 lg-dropshadow">
+                  <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioHelperButton">
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5">
+                          <img class="w-12 h-6 m-2" src="./img/litcard.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Litoral card</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Compre e gerencie aqui.</p>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle justify-center h-8 w-16">
+                          <img class="w-8 h-8 mt-1" src="./img/metrocard.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Metrocard</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Saiba mais.</p>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5 w-16">
+                          <img class="w-10 h-4 m-2" src="./img/transporte.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Graciosa Transportes</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Soluções de transporte turístico.</p>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5 w-16">
+                          <img class="w-10 h-5 m-2" src="./img/loads.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Cargas e Encomendas</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Seus pacotes seguros com a Graciosa.</p>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5 w-16">
+                          <img class="w-10 h-3 m-3" src="./img/marumbi.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Viação Marumbi</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Seu transporte metropolitano.</p>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+              </div>
+              <!-- End of dropdown -->
+            </li>
+            <li><!--Dúvidads-->
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-marca-700 md:p-0 dark:text-white md:dark:hover:text-marca-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Dúvidas frequentes</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+  
+      </nav>
+    <!-- Navbar-End-->
+
+    <!--Manteinance banner-->
+    <div class="bg-marca-100 w-full h-[500px] flex justify-center align-middle"> 
+
+
+        <div class="flex flex-col justify-center align-middle h-[400px] max-w-md p-8 mt-12 gap-8">
+            <object data="./img/construction.svg" class=" justify-self-center h-16"></object>
+            <a href="#">
+                <h5 class="mb-2 text-center text-3xl font-semibold tracking-tight text-marca-800 dark:text-white">Ops!</h5>
+            </a>
+            <p class="mb-3 text-lg text-center font-normal text-gray-700 dark:text-gray-400">Parece que essa página ainda não está pronta, continuamos trabalhando para completar ela.</p>
+            <a href="index.html" class="inline-flex justify-center font-semibold items-center text-marca-600 hover:underline">
+                Voltar ao Início
+                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+                </svg>
+            </a>
+        </div>
+        
+
+
+    </div>
+
+
+
+
+
+
+
+    <!--FOOTER-->
+      
+
+    <footer class="bg-marca-100  dark:bg-gray-900 font-sans text-tailwind">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-16 lg:py-16">
+            <div class="md:flex md:justify-between">
+              <div class="mb-6 md:mb-0">
+                  <a href="#index" class="flex-auto space-y-5">
+                      <img src="./img/logo-2.svg" class="h-8 me-3" alt="Viação Graciosa Logo"/>
+                      <div class="mr-7 self-center whitespace-normal dark:text-white text-tailwind">Há mais de 40 anos fazendo parte da história do nosso Litoral Paranaense!</div>
+                  </a>
+              </div>
+              <div class="grid grid-cols-1 gap-12 sm:gap-6 sm:grid-cols-3">
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-600  dark:text-white">Menu</h2>
+                      <ul class="text-gray-800 dark:text-gray-400 font-medium space-y-5">
+                          <li class="">
+                              <a href="https://viacaograciosa.com/" class="hover:underline">Comprar passagens</a>
+                          </li>
+                          <li>
+                              <a href="https://tailwindcss.com/" class="hover:underline">Graciosa Transportes</a>
+                          </li>
+                          <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Cargas e encomendas</a>
+                          </li>
+                          <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Viação Marumbi</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-600  dark:text-white">Compania</h2>
+                      <ul class="text-gray-800 dark:text-gray-400 space-y-5 font-medium">
+                          <li class="">
+                              <a href="company" class="hover:underline ">O Grupo</a>
+                          </li>
+                          <li>
+                              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Dúvidas frequentes</a>
+                          </li>
+                          <li>
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Agências</a>
+                          </li>
+                          <li>
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Contato</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb- text-sm font-semibold text-gray-600  dark:text-white">Entre em contato</h2>
+                      <ul class="text-gray-800 dark:text-gray-400 font-medium ">
+                        <li class="flex items-center space-x-2 rtl:space-x-reverse py-4">
+                          <object data="./img/mail-8.svg"></object>
+                          <div class="flex-col items-start p-">
+                            <span class="font-black">Email</span>
+                            <span>graciosa@viacaograciosa.com.br</span>
+                          </div>
+                        </li>
+                        <li class="flex items-center space-x-2 rtl:space-x-reverse py-4">
+                          <object data="./img/phone-3.svg"></object>
+                          <div class="flex-col items-start space-y-2">
+                            <div class="font-black">Telefone</div>
+                            <span>(41) 3223-0873</span>
+                          </div>
+                        </li>
+                        <li class="flex items-start space-x-2  rtl:space-x-reverse py-4">
+                          <object data="./img/map-pin-3.svg"></object>
+                          <div class="inline">
+                            <div class="font-black">Endereço</div>
+                            <span>Rua Joquei Club, 188 Prado Velho - Curitiba - PR</span>
+                          </div>
+                        </li>
+                        
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="index.html" class="hover:underline">Grupo Graciosa © 2024. Todos os direitos reservados.</a>. 
+              </span>
+              <div class="flex mt-4 sm:justify-center gap-4 sm:mt-0">
+                
+                  <a>
+                    <img  href="#" src="./img/pay3.png" alt="" class="w-10 h-10">
+                  </a>
+                  <a>
+                    <img  href="#" src="./img/pay3.svg" alt="" class="w-10 h-10">
+                  </a>
+                  <a>
+                    <img  href="#" src="./img/pay2.png" alt="" class="w-10 h-5 mt-3">
+                  </a>
+                  <a>
+                    <img  href="#" src="./img/pay1.png" alt="" class="w-10 h-10">
+                  </a>
+                  <a>
+                    <img  href="#" src="./img/visa-logo-2.svg" alt="" class="w-10 h-10">
+                  </a>
+              </div>
+          </div>
+        </div>
+      </footer>     
+  
+
+</body>

@@ -5,96 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   
-  <link rel="stylesheet" href="src/output.css" />
-    <link rel="stylesheet" href="css/globals.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="node_modules/flowbite/dist/flowbite.js"></script>
+  <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/styleguide.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./node_modules/flowbite/dist/datepicker.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
 </head>
 <body>
   <!--Banners-->
-  <main class="justify-center px-20 py-14 bg-emerald-50 max-md:px-5  bg-marca-100 font-sans">
-    <div class="flex justify-center gap-1 max-md:flex-col max-md:gap-0">
+  <main class=" flex justify-center px-20 py-14 bg-emerald-50 max-md:px-5  bg-marca-100 font-sans max-md:flex-col">
       
       <!--Caixa de pesquisa-->
-      <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
-        <form class="flex flex-col grow justify-end p-6 mx-auto w-full caixadepesquisa-shadow max-md:px-5 max-md:mt-10 "><!--Frame-->
-        <fieldset class="flex gap-5 pt-3"><!--Radio-buttons-->
-           <div class="flex items-center mb-4">
-            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="default-radio-1" class="text-wrapper">Só ida</label>
-          </div>
-          <div class="flex items-center mb-4">
-            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="default-radio-1" class="text-wrapper">Ida e volta</label>
-          </div>
+      <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] z-30 ">
+        <form class="flex flex-col grow justify-end p-6 mx-auto w-full lg-dropshadow max-md:px-5 max-md:mt-10 "><!--Frame-->
+        
+          <!--Radio-buttons-->
+          <fieldset class="flex gap-5 py-2">
+          
+          <div class="pb-2"><input id="default-radio-1" type="radio" value="" name="default-radio"/>
+          <label for="default-radio-1" class="p-2 label">Só ida</label></div>
 
+          <div class="pb-2"><input id="default-radio-1" type="radio" value="" name="default-radio"/>
+          <label for="default-radio-1" class="p-2 label">Ida e volta</label></div>
+            
         </fieldset>
-          <label for="origin" class="text-wrapper">
+        <!--Local-->
+          <label for="origin" class="text-wrapper mb-2">
             Saindo de
           </label>
           <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
-          <label for="destination" class="text-wrapper">
+
+        <!--Local-->
+          <label for="destination" class="text-wrapper my-2">
             Indo para
           </label>
           <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
-          <label for="departureDate" class="mt-5 text-sm font-medium leading-5 text-slate-700">
+
+        <!--Date 1-->
+          <label for="departureDate" class="mt-4 text-sm font-medium leading-5 text-slate-700">
             Data de ida
           </label>
-          <div class="flex gap-2 px-3.5 py-2.5 mt-1.5 text-base font-medium leading-6 text-center text-gray-900 whitespace-nowrap bg-white rounded-lg border border-gray-300 border-solid shadow-sm">
-            <div class="flex flex-1 gap-2">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3788997ba4d483fd7a4196904299048d644455a54427dd41bb5415c845dbb82?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
-              <input type="date" id="departureDate" value="2024-04-20" class="flex-1" />
+          
+          <div id="date-range-picker" date-rangepicker class="flex-col items-center">
+            <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <object data="./img/calendar-4.svg" class="w-5 h-5 me-3"></object>
+              </div>
+              <input id="datepicker-range-start" name="start" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 my-4" placeholder="Selecione a data">
             </div>
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/19ce43b5b58ffc71c99e70e3ccd4daa4db27193357a4e06bde244992b3429b93?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-4 aspect-square" alt="" />
+
+            <label for="returnDate" class="mt-4 text-sm font-medium leading-5 text-slate-700">
+              Data de volta
+            </label>
+            
+            <div class="relative my-4">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <object data="./img/calendar-4.svg" class="w-5 h-5 me-3"></object>
+              </div>
+              <input id="datepicker-range-end" name="end" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Selecione a data">
           </div>
-          <label for="returnDate" class="mt-5 text-sm font-medium leading-5 text-slate-700">
-            Data de volta
-          </label>
-          <div class="flex gap-2 px-3.5 py-2.5 mt-1.5 text-base font-medium leading-6 text-center text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm">
-            <div class="flex flex-1 gap-2">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3788997ba4d483fd7a4196904299048d644455a54427dd41bb5415c845dbb82?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
-              <input type="date" id="returnDate" class="flex-1" placeholder="Escolha a data" />
-            </div>
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/19ce43b5b58ffc71c99e70e3ccd4daa4db27193357a4e06bde244992b3429b93?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-4 aspect-square" alt="" />
           </div>
-          <button class="flex justify-center items-center px-5 py-2.5 mt-8 w-full text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/51139065cb28121b6d7cff9a7696706534d0aa29e3a3157add432c00ca973a79?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
-            <span>Procurar</span>
+
+          <button class="flex justify-center items-center px-5 py-2.5 mt-4 w-full text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
+            <object data="./img/search.svg" class="w-5 h-5 me-3"></object>
+           Procurar
           </button>
         </form>
       </section>
     
       <!--Banner instagram-->  
-      <section class="max-w-[400px] max-h-[530] flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full rounded-[32px] overflow-hidden">
-        
-        <div class="flex overflow-hidden relative flex-col flex-wrap grow justify-between content-end pt-8 border border-gray-300 border-solid aspect-[0.76] max-md:mt-10">
-          <img loading="eager" src="./img/promo.png" class="object-cover absolute inset-0 size-full" alt="Background image" />
+      <section class="max-w-[400px] max-h-[530px] flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full rounded-[32px] overflow-hidden z-20">
+    
+        <div class="flex h-[530px] overflow-hidden relative flex-wrap  content-end pt-8 border border-gray-300 border-solid aspect-[0.76] rounded-[32px]">
+          <img loading="eager" src="./img/promo.png" class="object-fill absolute inset-0 " alt="Background image" />
 
-        <div class="static bottom-0 content-start mt-[460px] w-full h-full rounded-3xl max-md:mt-10 h-max-[40px]">
-            <div class="static bottom-0 flex  gap-5 px-6 pt-6 pb-8 rounded-none backdrop-blur-lg bg-gray-800 bg-opacity-30 max-md:px-5 h-full h-max-[40px] justify-center" >
-              <img loading="lazy" src="./img/social-icon-2.svg" class="shrink-0 self-start w-6 aspect-square" alt="Instagram icon" />
-                <h2 class="text-xl font-medium leading-8 text-white">
+        <div class="place-self-end w-full h-20 rounded-3xl ">
+            <div class="flex gap-5 px-6 pt-6 pb-8 rounded-none backdrop-blur-lg bg-gray-800 bg-opacity-30 max-md:px-5 h-full h-max-[40px] align-middle" >
+              <img loading="lazy" src="./img/social-icon-2.svg" class=" w-6 aspect-square" alt="Instagram icon" />
+              <h2 class="text-xl font-medium text-white">
                   Visite o nosso Instagram
-                </h2>
+              </h2>
           </div>
         </div>
       </section>
 
-      <section class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full max-w-[400px] max-h-[530]">
-        <div class="h-[218px] w-auto flex relative grow max-md:mt-10 max-md:max-w-full " >
-          <object data="img/frame-5.svg" class="absolute bottom-0 right-0 shrink-1"></object>
-          <h1 class="flex flex-col flex-wrap justify-between content-start px-8 pt-16 pb-7 hero-text"  >
+      <!--Slogan-->  
+      <section class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full max-w-[400px] max-h-[530] overflow-visible">
+        <div class="w-auto flex relative grow max-md:mt-10 overflow-visible max-md:max-w-full ">
+          <object data="img/frame-5.svg" class="absolute bottom-0 left-[310px] shrink-1"></object>
+          <h1 class="px-8 pt- pb-7 hero-text"  >
             Há mais de 40 anos fazendo parte da história do litoral paranaense!
           </h1>
-          
+      <!--Bus logo-->     
         </div>
-          <div class="flex flex-col grow w-[445px] h-[236px] px-0 pt-[50px] bg-marca-200 rounded-[32px] justify-between items-end ">
-            <object data="./img/bus-hero.svg" type="image/svg+xml" class="w-[411px] h-[163px] right-[20px] top-[50px] relative"></object>
+          <div class="flex flex-col grow w-[445px] h-[236px] px-0 pt-[50px] bg-marca-200 rounded-[32px] justify-between items-end z-10">
+            <object data="./img/bus-hero.svg" type="image/svg+xml" class="w-[411px] h-[200px] right-32 absolute"></object>
           </div>
         </div>
       </section>
-    </div>
   </main>
 
 
@@ -106,7 +116,7 @@
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="#index" class="flex-auto space-y-5">
-                    <img src="./img/logo-2.svg" class="h-8 me-3" alt="FlowBite Logo"/>
+                    <img src="./img/logo-2.svg" class="h-8 me-0" alt="FlowBite Logo"/>
                     <div class="mr-7 self-center whitespace-normal dark:text-white text-tailwind">Há mais de 40 anos fazendo parte da história do nosso Litoral Paranaense!</div>
                 </a>
             </div>
