@@ -279,7 +279,7 @@
   box-shadow: var(--shadow-xl);
 }
 
-.caixadepesquisa-shadow {
+.lg-dropshadow {
   background-color: white;
   border-radius: 30px;
   overflow: hidden;

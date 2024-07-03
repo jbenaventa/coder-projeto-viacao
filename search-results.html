@@ -36,25 +36,25 @@
               <button type="button" class="flex text-white bg-marca-500 hover:bg-marca-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-md px-5 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">Minha conta</button><!-- Botão de conta -->
             </div> 
   
-  
               <!-- Dropdown menu: Conta -->
-              <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-2xl shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
-                  <div class="px-4 py-3">
-                    <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
-                    <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+              <div class="z-50 hidden p-4 my-4 text-base list-none lg-dropshadow" id="user-dropdown">
+                  <div class="px-4 py-3 border-b-gray-400">
+                    <object data="./img/pfp.svg" class="max-h-12"></object>
+                    <span class="block text-md font-semibold text-gray-900 dark:text-white">Mateus da Silva</span>
+                    <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">+12-3456-78910</span>
                   </div>
                   <ul class="py-2" aria-labelledby="user-menu-button">
                     <li>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Informação pessoal</a>
                     </li>
                     <li>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Histórico de passagens</a>
                     </li>
                     <li>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Suporte</a>
                     </li>
                     <li>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                      <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Encerrar sessão</a>
                     </li>
                   </ul>
                 </div>
@@ -67,51 +67,94 @@
             <li><!--Inicio-->
               <a href="#" class="block py-2 px-3 text-gray-700 bg-marca-700 rounded md:bg-transparent md:text-marca-700 md:p-0 md:dark:text-marca-500" aria-current="page">Início</a>
             </li>
-            <li><!--Rotas e horarios-->
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarRotas" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Rotas e Horários<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg></button>
-              <!-- Dropdown menu-Rotas -->
-              <div id="dropdownNavbarRotas" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-xl shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-4 px-4 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                    </li>
-                  </ul>
-              </div>
-              <!-- End of dropdown -->
+            <li><!--Rotas e Horários-->
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-marca-700 md:p-0 dark:text-white md:dark:hover:text-marca-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Rotas e Horários</a>
             </li>
-            <li><!--Rotas e horarios-->
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarServicos" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Serviços<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <li><!--Serviços-->
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarServicos" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-marca-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-marca-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Serviços<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
               </svg></button>
-              <!-- Dropdown menu-Rotas -->
-              <div id="dropdownNavbarServicos" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+
+              <!-- Dropdown menu-Serviços -->
+                <div id="dropdownNavbarServicos" class="z-10 hidden p-4 lg-dropshadow">
+                  <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRadioHelperButton">
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5">
+                          <img class="w-12 h-6 m-2" src="./img/litcard.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Litoral card</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Compre e gerencie aqui.</p>
+                            </label>
+                        </div>
+                      </div>
                     </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle justify-center h-8 w-16">
+                          <img class="w-8 h-8 mt-1" src="./img/metrocard.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Metrocard</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Saiba mais.</p>
+                            </label>
+                        </div>
+                      </div>
                     </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5 w-16">
+                          <img class="w-10 h-4 m-2" src="./img/transporte.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Graciosa Transportes</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Soluções de transporte turístico.</p>
+                            </label>
+                        </div>
+                      </div>
                     </li>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5 w-16">
+                          <img class="w-10 h-5 m-2" src="./img/loads.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Cargas e Encomendas</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Seus pacotes seguros com a Graciosa.</p>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><!-- Item -->
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="flex align-middle h-5 w-16">
+                          <img class="w-10 h-3 m-3" src="./img/marumbi.png" alt="Jese image">
+                        </div>
+                        <div class="ms-2 text-md">
+                            <label for="helper-radio-4" class="font-medium text-gray-900 dark:text-gray-300">
+                              <div>Viação Marumbi</div>
+                              <p id="helper-radio-text-4" class="text-sm font-normal text-gray-500 dark:text-gray-300">Seu transporte metropolitano.</p>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+                    
                   </ul>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                  </div>
               </div>
               <!-- End of dropdown -->
             </li>
             <li><!--Dúvidads-->
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Dúvidas frequentes</a>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-marca-700 md:p-0 dark:text-white md:dark:hover:text-marca-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Dúvidas frequentes</a>
             </li>
           </ul>
         </div>
@@ -120,74 +163,423 @@
       </nav>
     <!-- Navbar-End-->
    
-    <div class="flex justify-center gap-4 p-4 w-max-[1200px]"><!--Inicio de flexbox-->
+    <!--Inicio de flexbox entre itens-->
+    <div class="flex justify-center gap-20 p-4 w-max-[1200px] bg-marca-100">
 
-    <!--Caixa de pesquisa-->
-    <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
-        <form class="flex flex-col grow justify-end p-6 mx-auto w-full caixadepesquisa-shadow max-md:px-5 max-md:mt-10 "><!--Frame-->
-        <fieldset class="flex gap-5 pt-3"><!--Radio-buttons-->
-        <div class="flex items-center mb-4">
-            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="default-radio-1" class="p-2 label">Só ida</label>
-        </div>
-        <div class="flex items-center mb-4">
-            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="default-radio-1" class=" p-2 label">Ida e volta</label>
-        </div>
+    <!--Flexbox entre caixa e filtros-->
+    <div class="flex-row gap-4">
+     <!--Caixa de pesquisa-->
+        <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
+            <form class="flex flex-col grow justify-end p-6 mx-auto w-full lg-dropshadow max-md:px-5 max-md:mt-10 "><!--Frame-->
+            <fieldset class="flex gap-2 "><!--Radio-buttons-->
+            <div class="flex items-center mb-2">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="p-2 label">Só ida</label>
+            </div>
+            <div class="flex items-center mb-2">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class=" p-2 label">Ida e volta</label>
+            </div>
 
-        </fieldset>
-        <label for="origin" class="label pb-2">
-            Saindo de
-        </label>
-        <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
-        <label for="destination p" class="label pt-2 pb-2">
-            Indo para
-        </label>
-        <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
-                <div class="input-field">
-                    <div class="div-2">
-                    <div class="label label pt-2 pb-2">Data de ida</div>
-                    <div class="input">
-                        <input type="date" id="departure-date" name="departure-date" class="input-date-field">
-                        <img class="chevron-down" src="../img/chevron-down-9.svg" />
+            </fieldset>
+            <label for="origin" class="label pb-2">
+                Saindo de
+            </label>
+            <input type="text" id="origin" class="justify-center px-3.5 py-2.5 mt-1 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade de origem." />
+            <label for="destination p" class="label pt-2 pb-2">
+                Indo para
+            </label>
+            <input type="text" id="destination" class="justify-center px-3.5 py-2.5 mt-1.5 text-base leading-6 text-gray-500 bg-white rounded-lg border border-gray-300 border-solid shadow-sm" placeholder="Digite a cidade destino" />
+                    <div class="input-field">
+                        <div class="div-2">
+                        <div class="label label pt-2 pb-2">Data de ida</div>
+                        <div class="input">
+                            <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                            <img class="chevron-down" src="../img/chevron-down-9.svg" />
+                        </div>
+                        </div>
                     </div>
+                    <div class="input-field">
+                        <div class="div-2">
+                        <div class="label label pt-2 pb-2">Data de volta</div>
+                        <div class="input">
+                            <input type="date" id="departure-date" name="departure-date" class="input-date-field">
+                            <img class="chevron-down" src="../img/chevron-down-9.svg" />
+                        </div>
+                        </div>
                     </div>
-                </div>
-                <div class="input-field">
-                    <div class="div-2">
-                    <div class="label label pt-2 pb-2">Data de volta</div>
-                    <div class="input">
-                        <input type="date" id="departure-date" name="departure-date" class="input-date-field">
-                        <img class="chevron-down" src="../img/chevron-down-9.svg" />
-                    </div>
-                    </div>
-                </div>
-        
-        <button class="flex justify-center items-center px-5 py-2.5 mt-8 w-full text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/51139065cb28121b6d7cff9a7696706534d0aa29e3a3157add432c00ca973a79?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
-            <span>Procurar</span>
-        </button>
-        </form>
-    </section>
+            
+            <button class="flex justify-center items-center px-5 py-2.5 mt-2 w-full text-base font-semibold leading-6 text-white whitespace-nowrap rounded-3xl border border-green-800 border-solid shadow-sm bg-[linear-gradient(90deg,#629E3A_0%,#0E804B_100%)] max-md:px-5">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/51139065cb28121b6d7cff9a7696706534d0aa29e3a3157add432c00ca973a79?apiKey=ae7fc3800e7b4ee5b44507ad57ef1b84&" class="shrink-0 my-auto w-5 aspect-square" alt="" />
+                <span>Procurar</span>
+            </button>
+            </form>
+        </section>
+
+        <!--Caixa de filtros-->
+        <section class="pt-4 w-[33%] max-md:ml-0 max-md:w-full min-w-[400px] max-w-[400px] max-h-[530] ">
+          <!--Frame da caixa--><form class="flex flex-col grow justify-end p-6 mx-auto w-full bg-marca-200 rounded-3xl max-md:px-5 max-md:mt-10 ">
+          <div class=" w-full border-b border-gray-500">
+          <label for="origin" class=" text-base pb-2 text-gray-700 font-semibold">Horários</label>
+
+          <!--Radio-buttons-->
+          <fieldset class="flex-col justify-between gap-y-2 pt-1 ">
+
+              <div class="pb-2"><input id="default-radio-1" type="radio" value="" name="default-radio"/>
+              <label for="default-radio-1" class="p-2 label">Madrugada</label></div>
+
+              <div class="pb-2"><input id="default-radio-1" type="radio" value="" name="default-radio"/>
+              <label for="default-radio-1" class="p-2 label">Manhã</label></div>
+              
+              <div class="pb-2"><input id="default-radio-1" type="radio" value="" name="default-radio"/>
+              <label for="default-radio-1" class="p-2 label">Tarde</label></div>
+                  
+              <div class="pb-2"><input id="default-radio-1" type="radio" value="" name="default-radio"/>
+              <label for="default-radio-1" class="p-2 label">Noite</label></div>
+          </fieldset>
+          </div>
+
+          <label for="origin" class="text-base pb-2 text-gray-700 font-semibold">Ordenar por</label>
+          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-gray-700  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 text-center inline-flex items-center" type="button">Menor preço<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+            </button>
+            
+            <!-- Dropdown menu -->
+            <div id="dropdown" class=" w-[400px] z-10 hidden bg-white divide-y divide-gray-100 rounded-3xl shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#" class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    Maior preço</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mais cedo</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mais tarde</a>
+                  </li>
+                </ul>
+            </div>
+          </form>
+      </section>
+
+    <!--Final de flexbox entre pesquisa e filtros-->
+    </div>
+    <!--RESULTADOS-->
+    <div class="flex-row gap-y-6">
 
     <!-- Date bar-->
-
       <div class="inline-flex rounded-md shadow-sm h-[72px] max-w-[800px]" role="group">
-        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-s-2xl hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
-          Profile
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 bg-transparent border border-gray-700 rounded-s-2xl hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          <div>19/04/2024</div>
+          QUARTA 
         </button>
-        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
-          Settings
+
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 bg-transparent border-t border-r border-b border-gray-700 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          <div>20/04/2024</div>
+          QUINTA 
         </button>
-        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-l border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
-          Settings
+
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 bg-transparent border-t border-b border-gray-700 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          <div>21/04/2024</div>
+          SEXTA 
         </button>
-        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-e-2xl hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
-          Downloads
+        
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 bg-transparent border-t border-l border-b border-gray-700 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          <div>22/04/2024</div>
+          SÁBADO
+        </button>
+
+        <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-700 rounded-e-2xl hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          <div>23/04/2024</div>
+          DOMINGO
         </button>
         
       </div>
 
+    <!--Lista de resultados-->
+      <div><ul class="max-w-xl pt-8 divide-y divide-gray-200 dark:divide-gray-700">
+       <!--RESULTADO-->
+        <li class="py-4">
+          <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+              <object data="./img/end-to-end.svg" class="max-h-12"></object>
+
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    12:00 - Curitiba
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    13:30 - Ilha do Mel
+                </p>
+              </div>
+
+              <div class="flex-row justify-center min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    CONVENCIONAL
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    41 restantes
+                </p>
+              </div>
+
+              <div class="flex justify-center min-w-0">
+                <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                    1:30
+                </p>
+              </div>
+              
+              <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                40,00 BRL
+              </div>
+
+              <button type="button" class="inline-flex items-center text-base font-semibold text-marca-700 dark:text-white">
+                Selecionar
+              </button>
+          </div>
+        </li>
+
+        <!--RESULTADO-->
+        <li class="py-4">
+          <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+              <object data="./img/end-to-end.svg" class="max-h-12"></object>
+
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    12:00 - Curitiba
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    13:30 - Ilha do Mel
+                </p>
+              </div>
+
+              <div class="flex-row justify-center min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    CONVENCIONAL
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    41 restantes
+                </p>
+              </div>
+
+              <div class="flex justify-center min-w-0">
+                <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                    1:30
+                </p>
+              </div>
+              
+              <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                40,00 BRL
+              </div>
+
+              <button type="button" class="inline-flex items-center text-base font-semibold text-marca-700 dark:text-white">
+                Selecionar
+              </button>
+          </div>
+        </li>
+        <!--RESULTADO-->
+        <li class="py-4">
+          <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+              <object data="./img/end-to-end.svg" class="max-h-12"></object>
+
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    12:00 - Curitiba
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    13:30 - Ilha do Mel
+                </p>
+              </div>
+
+              <div class="flex-row justify-center min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    CONVENCIONAL
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    41 restantes
+                </p>
+              </div>
+
+              <div class="flex justify-center min-w-0">
+                <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                    1:30
+                </p>
+              </div>
+              
+              <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                40,00 BRL
+              </div>
+
+              <button type="button" class="inline-flex items-center text-base font-semibold text-marca-700 dark:text-white">
+                Selecionar
+              </button>
+          </div>
+        </li>
+        <!--RESULTADO-->
+        <li class="py-4">
+          <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+              <object data="./img/end-to-end.svg" class="max-h-12"></object>
+
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    12:00 - Curitiba
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    13:30 - Ilha do Mel
+                </p>
+              </div>
+
+              <div class="flex-row justify-center min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    CONVENCIONAL
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    41 restantes
+                </p>
+              </div>
+
+              <div class="flex justify-center min-w-0">
+                <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                    1:30
+                </p>
+              </div>
+              
+              <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                40,00 BRL
+              </div>
+
+              <button type="button" class="inline-flex items-center text-base font-semibold text-marca-700 dark:text-white">
+                Selecionar
+              </button>
+          </div>
+        </li>
+
+        <!--RESULTADO-->
+        <li class="py-4">
+          <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+              <object data="./img/end-to-end.svg" class="max-h-12"></object>
+
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    12:00 - Curitiba
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    13:30 - Ilha do Mel
+                </p>
+              </div>
+
+              <div class="flex-row justify-center min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    CONVENCIONAL
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    41 restantes
+                </p>
+              </div>
+
+              <div class="flex justify-center min-w-0">
+                <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                    1:30
+                </p>
+              </div>
+              
+              <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                40,00 BRL
+              </div>
+
+              <button type="button" class="inline-flex items-center text-base font-semibold text-marca-700 dark:text-white">
+                Selecionar
+              </button>
+          </div>
+        </li>
+
+        <!--RESULTADO-->
+        <li class="py-4">
+          <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+              <object data="./img/end-to-end.svg" class="max-h-12"></object>
+
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    12:00 - Curitiba
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    13:30 - Ilha do Mel
+                </p>
+              </div>
+
+              <div class="flex-row justify-center min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    CONVENCIONAL
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    41 restantes
+                </p>
+              </div>
+
+              <div class="flex justify-center min-w-0">
+                <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                    1:30
+                </p>
+              </div>
+              
+              <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                40,00 BRL
+              </div>
+
+              <button type="button" class="inline-flex items-center text-base font-semibold text-marca-700 dark:text-white">
+                Selecionar
+              </button>
+          </div>
+        </li>
+
+        <!--RESULTADO-->
+        <li class="py-4">
+          <div class="flex items-center justify-stretch space-x-5 rtl:space-x-reverse">
+              <object data="./img/end-to-end.svg" class="max-h-12"></object>
+
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    12:00 - Curitiba
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    13:30 - Ilha do Mel
+                </p>
+              </div>
+
+              <div class="flex-row justify-center min-w-0">
+                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    CONVENCIONAL
+                </p>
+                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    41 restantes
+                </p>
+              </div>
+
+              <div class="flex justify-center min-w-0">
+                <object data="./img/clock.svg" class="w-4 mr-1"></object>
+                <p class="text-md text-gray-500 truncate dark:text-gray-400">
+                    1:30
+                </p>
+              </div>
+              
+              <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                40,00 BRL
+              </div>
+
+              <button type="button" class="inline-flex items-center text-base font-semibold text-marca-700 dark:text-white">
+                Selecionar
+              </button>
+          </div>
+        </li>
+      
+      </ul></div>
+
+    <!--Final de resultados--></div>
 
   </div><!--FINAL FLEXBOX-->
 
